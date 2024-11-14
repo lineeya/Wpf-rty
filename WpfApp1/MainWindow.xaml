@@ -6,9 +6,13 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-        <Button Content="Далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="340" Height="69" Margin="224,169,0,0" Click="Button_Click"/>
+    <Grid> 
+
+        <Button Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="161" Height="39" Margin="303,336,0,0" Click="Button_Click"/>
+        <TextBlock  Name="txtDisplay" FontSize="25" Foreground="Red" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="60" Width="181" RenderTransformOrigin="0.52,0.455" Margin="283,64,0,0"/>
+        <TextBox Name="userTxt" TextWrapping="Wrap" FontSize="25" HorizontalAlignment="Left" Height="40"  Text="TextBox" VerticalAlignment="Top" Width="199" Margin="283,124,0,0" TextChanged="UserTxt_TextChanged"/>
+        <PasswordBox Name="passwTxt" FontSize="25" HorizontalAlignment="Left" Height="35" Margin="283,198,0,0" VerticalAlignment="Top" Width="199"/>
+        <Button Content="Войти" FontSize="25" Background="AliceBlue" HorizontalAlignment="Left" VerticalAlignment="Top" Width="143" Height="52" Margin="308,254,0,0"/>
 
     </Grid>
 </Window>

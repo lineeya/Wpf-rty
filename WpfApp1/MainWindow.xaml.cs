@@ -20,6 +20,10 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        private string _pass = "2733";
+        private string _inputPass = "";
+
+
         public MainWindow()
         {
             InitializeComponent();
@@ -35,7 +39,20 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            _inputPass = passwTxt.ToString();
+            if (_inputPass == _pass)
+            {
+                txtDisplay.Text = "Добро";
+            }
+            else
+            {
+                MessageBox.Show("Неверный пароль");
+            }
+        }
+
+        private void UserTxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
